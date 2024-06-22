@@ -11,12 +11,12 @@ const EachCategory = () => {
 //   console.log(cat)
   const { articles } = useSelector((store) => store.news[catMain]);
   const {favorite} = useSelector((store) => store.news);
-  console.log(favorite,articles)
+  // console.log(favorite,articles)
   const [currentPage,setCurrentPage] = useState(1)
   const recordsPerPage = 4
   const indexOfLastRecord = currentPage * recordsPerPage;
   const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
-  const totalPages = Math.ceil(articles?.length/recordsPerPage)
+  const totalPages = Math.ceil(articles?.length/recordsPerPage) || 0
 //   console.log(totalPages)
   const numbers = [...Array(totalPages+1).keys()].slice(1)
 //   console.log(catMain, articles, newsArticles);
