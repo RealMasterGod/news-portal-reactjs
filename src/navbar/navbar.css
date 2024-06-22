@@ -1,0 +1,145 @@
+
+.header {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 5rem;
+    padding-left: 1rem;
+}
+
+.logo-img img {
+    width: 10rem;
+    padding-top: 1em;
+}
+/* .header-text h1:last-child {
+    background-color:rgb(240, 69, 69);
+    color: white;
+    border-radius: 1rem 0 1rem  1rem;
+    padding: 2px;
+} */
+.header-text h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    display: inline;
+    font-size: 60px;
+}
+
+.navbar {
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    display: block;
+    padding: 0.5rem 0;
+    /* border: 1px solid red; */
+    margin-left: 1rem ;
+    padding-right: 1rem;
+}
+
+.nav-list li a {
+    color: white;
+    display: block;
+}
+.nav-list li a:hover {
+    color: rgb(212, 46, 46);
+}
+
+
+.btn-logo {
+    background-color: transparent;
+    border: none;
+    display: none;
+    height: 2rem;
+    padding-left: 1rem;
+    transition: 0.5s ease all;
+}
+
+.btn-logo-img{
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.search {
+    margin-right: 1rem;
+}
+
+.search input {
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+    height: 1.5rem;
+}
+.search input:focus {
+    outline: none;
+}
+.keyword-search {
+    margin-left: 0.5rem;
+    width: 6rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(212, 46, 46);
+    color:white;
+    height: 1.5rem;
+}
+
+.keyword-search:hover {
+    background-color: rgb(187, 44, 44);
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        height: none;
+    }
+    
+    .nav-list li {
+        display: none;
+    }
+    .btn-logo {
+        display: block;
+    }
+    .btn-logo:hover {
+        /* padding-bottom: 10rem; */
+        margin-bottom: 1rem;
+        transform: rotateZ(90deg);
+        /* background-color: aqua; */
+    }
+    .nav-slider {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(212, 46, 46);
+        width: 100%;
+        top: 2rem;
+        height: 45vh;
+        z-index: 999;
+        padding: 1rem;
+        height: auto;
+        transition: 0.3s ease-in-out all;
+        list-style-type: none;
+        
+    }
+    .nav-slider li a {
+        color: white;
+        display: flex;
+        padding-bottom: 1rem;
+        list-style-type: none;
+        /* border: 1px solid white; */
+    }
+    .nav-slider li a:hover {
+        color: black;
+        border-right: 1px solid white;
+        font-weight: 800;
+    }
+}

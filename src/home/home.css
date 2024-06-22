@@ -1,0 +1,140 @@
+.hero {
+    /* margin: 1rem 0; */
+    color: white;
+}
+
+.hero-container {
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(10,6.6vh);
+    grid-gap: 0.25rem;
+
+}
+
+
+@media screen and (max-width:768px) {
+    .hero-container {
+        padding: 1rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(16,6vh);
+        grid-gap: 0.35rem;
+    }
+    .box:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .box:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 9;
+    }
+    .box:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 9;
+        grid-row-end: 13;
+    }
+    .box:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 13;
+        grid-row-end: 17;
+    }
+
+    .text h1{
+        margin: 0.5rem auto;
+        font-size: 15px;
+        font-weight: 500;
+        /* color: green; */
+    }
+    
+    .category {
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 0.25rem;
+        border-radius: 0.75rem;
+    }
+    
+    .source span {
+        font-size: 12px;
+        margin-right: 1rem;
+        /* color: yellow */
+    }
+
+    .box:nth-child(4) h1 {
+        font-size: 15px;
+    }
+    
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-content {
+    width: 75%;
+    /* background-color: cadetblue; */
+}
+.side-content {
+    width: 25%;
+    padding-left: 1rem;
+    /* background-color: rebeccapurple; */
+}
+
+@media screen and (max-width:768px) {
+    .home-container {
+        flex-direction: column;
+    }
+    .main-content {
+        width: 100%
+    }
+
+    .side-content {
+        width: 100%;
+        
+    }
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.main-content .title {
+    /* width: fit-content; */
+}
+
+.main-content .title h1 {
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    /* border-radius: 5px; */
+    /* text-align: center; */
+}
+
+.side-content {
+    padding-top: 1rem;
+}
+
+.recently-favorite {
+    font-size: 20px;
+    margin-top: 2rem;
+    background-color: rgb(187, 44, 44);
+    color:white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+    text-align: center;
+}
